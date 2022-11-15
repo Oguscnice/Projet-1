@@ -1,0 +1,3 @@
+fav ico
+carousel
+menu
