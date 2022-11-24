@@ -50,6 +50,11 @@ li a{
     margin-top: 8vh;
 }
 
+.bodycenter{
+    background: fixed;
+    background-image: url();
+}
+
 .indexpage .logopng {
     height: 30vh;
     width: 30vh;
@@ -154,7 +159,6 @@ ul {
     color: var(--font-yellow-platypus);
     font-family: var(--font-family-steelw);
     background-color: var(--font-blue-platypus);
-    font-si.beer-taux.ze: 2vh;
     text-shadow: 1px 1px 1px var(--font-white-platypus);
 }
 
@@ -266,7 +270,7 @@ button{
     height: 60px;
 }
 
-.bodyleft{
+.bodyleft, .bodyproduct{
     display: flex;
     flex-direction: column;
     margin : var(--margin-or-padding) var(--margin-or-padding);
@@ -308,8 +312,14 @@ footer a img{
     height: 50px;
 }
 
+.productfull{
+    display: flex;
+    flex-direction: column;
+}
+
 .producttitle{
     display: flex;
+    flex-wrap: wrap;
     align-items: baseline;
     box-sizing: content-box;
     width: 90%;
@@ -317,7 +327,7 @@ footer a img{
 
 .beer-taux{
     font-family: var(--font-family-works);
-    font-size: 2vh;
+    font-size: 1.8vh;
     color: grey;
     margin-left : var(--margin-or-padding) ;
 }
@@ -326,6 +336,7 @@ footer a img{
     border-radius:  25% 10%;
     box-shadow: 15px 15px 20px var(--font-blue-platypus);
     margin-bottom : var(--margin-or-padding);
+    object-fit: cover;
 }
 
 .bodyright{
@@ -405,7 +416,6 @@ footer a img{
     }
 
     .h2forsecond{
-        padding-left: 1vh;
         font-size: 2rem;
         width: 55%;
     }
@@ -479,18 +489,57 @@ footer a img{
         width: 80%;
     }
 
+    .allproduct{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .bodyproduct .allproduct .h3left{
+        font-size: 1rem;
+    }
+
     .productfull{
         display: flex;
-        width: 50%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 45%;
+        height: 50%;
     }
-
-    .imgproduct{
-        width: 20%;
-        margin-right : var(--margin-or-padding);
-    }
-
+    
     .producttitle{
         display: flex;
+        flex-direction: column;
+        margin-left: 1vh;
+        width: 57%;
+    }
+
+    .bodyproduct .pleft{
+        margin-left: 1vh;
+        font-size: 1rem;
+        padding-bottom: 0;
+    }
+    
+    .beer-taux{
+        font-size: 1.5vh;
+    }
+    
+    .imgproduct{
+        width: 150px;
+        height: 150px;
+        box-shadow: 10px 10px 10px var(--font-blue-platypus);
+    }
+
+    .bodyright{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
+    .pright, .h3right, .h4right {
+        font-size: 2rem;
     }
 
 }
