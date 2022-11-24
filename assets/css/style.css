@@ -2,34 +2,55 @@
     margin : 0;
     padding :0;
     border: 0;
+    list-style: none;
+    text-decoration:none;
+}
+
+li a{
+    color: var(--font-blue-platypus);
 }
 
 @font-face {
     font-family: 'Urban_Brush';
     src: url('/assets/font/urban_brush/Urban_Brush.ttf') format('truetype');
 }
+@font-face{
+    font-family: 'Steelworks';
+    src: url('/assets/font/burntilldead_steelworks-vintage-demo/Steelworks_Vintage_Demo.ttf') format('truetype');
+}
+@font-face{
+    font-family: 'WorkSans';
+    src: url('/assets/font/work-sans-cdnfonts/WorkSans-Regular.ttf') format('truetype');
+}
+@import url('https://fonts.cdnfonts.com/css/work-sans');
 
 :root {
     --font-family-urban : 'Urban_Brush';
-    --font-urban-blue-platypus : #004768;
+    --font-family-steelw : 'Steelworks';
+    --font-family-works : 'WorkSans';
+    --font-blue-platypus : #004768;
+    --font-yellow-platypus : #FBBB0E;
+    --font-white-platypus : #FAF6F0;
+    --margin-or-padding : 5%;
 }
 
-nav {
+
+.indexpage {
     display : flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
 
-nav h1 {
+.indexpage h1 {
     font-family: var(--font-family-urban);
-    color: var(--font-urban-blue-platypus);
+    color: var(--font-blue-platypus);
     height: 20%;
     font-size: 8vh;
     margin-top: 8vh;
 }
 
-nav .logopng {
+.indexpage .logopng {
     height: 30vh;
     width: 30vh;
     padding : 5vh;
@@ -66,5 +87,410 @@ nav .logopng {
     /* display: none; */
 }
 
-#beerbackground:not(:active){
+header nav{
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    background-color: var(--font-yellow-platypus);
+    color: var(--font-white-platypus);
+    border-bottom:solid var(--font-blue-platypus) 3px;
+    height: 10%;
+    width: 100%;
+}
+
+nav .logofornavpmobile{
+    width: 7vh;
+    margin: 2vh;
+}
+
+nav .logofornavdesktop{
+    display:  none;
+}
+
+nav .h1fornav{
+    width: 70%;
+    font-family: var(--font-family-urban);
+    font-size: 4vh;
+    -webkit-text-stroke: 0.01px var(--font-blue-platypus);
+}
+
+.h1forsecond{
+    display: none;
+    font-family: var(--font-family-urban);
+    font-size: 4vh;
+    color: var(--font-white-platypus);
+    -webkit-text-stroke: 0.01px var(--font-blue-platypus);
+}
+
+.allmenuburger{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 2vh;
+}
+
+nav .allmenuburger .littleburger{
+    display: block;
+    width: 5vh;
+    height: 5px;
+    margin: 3px;
+    border-radius: 25%;
+    background-color: var(--font-blue-platypus);
+}
+
+ul {
+    display : none;
+}
+
+.secondebanner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15%;
+    width: 100%;
+    padding-top: 13vh;
+    padding-bottom: 2vh;
+    color: var(--font-yellow-platypus);
+    font-family: var(--font-family-steelw);
+    background-color: var(--font-blue-platypus);
+    font-si.beer-taux.ze: 2vh;
+    text-shadow: 1px 1px 1px var(--font-white-platypus);
+}
+
+.logoforsecond{
+    display: none;
+}
+
+.bodycenter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family : 'Work Sans';
+}
+
+.h3center{
+    font-family: var(--font-family-works);
+    margin-top: var(--margin-or-padding);
+    text-align: center;
+}
+
+.pcenter{
+    margin-top: var(--margin-or-padding);
+    font-family: var(--font-family-works);
+}
+
+.controle{
+    display:grid;
+    grid:2rem/repeat(2,1fr);
+    place-items:center
+}
+
+button{
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+    background: white
+} 
+       
+.contenu-carrousel {
+    margin: 5rem auto;
+    width: 300px;
+    height: 200px;
+    position: relative;
+    perspective: 1000px
+}
+    
+.carrousel {  
+     height: 100%;
+     width: 90%;
+     position: absolute;
+     transform-style: preserve-3d;
+     transition: transform 1s;
+}
+    
+.carrousel div {  
+    backface-visibility: hidden;
+    box-shadow: 0 10px 10px rgba(0,0,0,.6);
+    position: absolute;
+    width: 90%;
+    height: 200px;
+    outline: 1px solid transparent  
+}
+        
+.carrousel div:nth-child(1) {
+    transform: rotateY(0) translateZ(270px);
+    background:url(../../images/outside-platypus.jpg) no-repeat center center/cover
+}
+        
+.carrousel div:nth-child(2) { 
+    transform: rotateY(60deg) translateZ(270px);
+    background:url(../../images/IMG_6534.jpg) no-repeat center center/cover
+}
+        
+.carrousel div:nth-child(3) {  
+    transform: rotateY(120deg) translateZ(270px);
+    background:url(../../images/inside-platy.jpg) no-repeat center center/cover
+}
+        
+.carrousel div:nth-child(4) {   
+    transform: rotateY(180deg) translateZ(270px);
+    background:url(../../images/speciales.jpg) no-repeat center center/cover
+}
+        
+.carrousel div:nth-child(5) {   
+    transform: rotateY(240deg) translateZ(270px);
+    background:url(../../images/beer/pexels-pixabay-52994.jpg) no-repeat center center/cover
+} 
+        
+.carrousel div:nth-child(6) {  
+    transform: rotateY(300deg) translateZ(270px);
+    background:url(../../images/bretonne.jpg) no-repeat center center/cover
+}
+
+.imgsocial{
+    display: flex;
+    justify-content: space-around;
+}
+
+.imgsocial a{
+    margin-top: var(--margin-or-padding);
+    justify-content: center;
+}
+
+.imgsocial a img{
+    width: 60px;
+    height: 60px;
+}
+
+.bodyleft{
+    display: flex;
+    flex-direction: column;
+    margin : var(--margin-or-padding) var(--margin-or-padding);
+    margin-right : var(--margin-or-padding);
+}
+
+.h3left{
+    margin-top : var(--margin-or-padding) ;
+    margin-bottom: var(--margin-or-padding);
+    box-sizing: content-box;
+    font-family: var(--font-family-works);
+}
+
+.pleft{
+    margin-bottom : var(--margin-or-padding);
+    font-family: var(--font-family-works);
+}
+
+.imgleft{
+    margin-top : var(--margin-or-padding) ;
+    margin-bottom: var(--margin-or-padding);
+    width: 80%;
+}
+
+footer{
+    margin-top : var(--margin-or-padding);
+    border-top: solid 1px var(--font-blue-platypus);
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+footer a{
+    margin : var(--margin-or-padding) var(--margin-or-padding);
+}
+
+footer a img{
+    width: 50px;
+    height: 50px;
+}
+
+.producttitle{
+    display: flex;
+    align-items: baseline;
+    box-sizing: content-box;
+    width: 90%;
+}
+
+.beer-taux{
+    font-family: var(--font-family-works);
+    font-size: 2vh;
+    color: grey;
+    margin-left : var(--margin-or-padding) ;
+}
+
+.imgproduct{
+    border-radius:  25% 10%;
+    box-shadow: 15px 15px 20px var(--font-blue-platypus);
+    margin-bottom : var(--margin-or-padding);
+}
+
+.bodyright{
+    display: flex;
+    justify-content: space-between;
+    margin: var(--margin-or-padding);
+}
+
+.pright, .h3right, .h4right {
+    text-align: end;
+    font-family: var(--font-family-works);
+}
+
+.h4right{
+    margin-top: var(--margin-or-padding);
+}
+
+.pright{
+    margin-top: var(--margin-or-padding);
+}
+
+@media screen and (max-width: 350px) {
+    .contenu-carrousel, .controle {
+        display: none;
+    }
+    
+    .secondebanner{
+        font-size: 12px;
+    }
+
+    footer a img{
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+
+    nav .logofornavpmobile{
+        display:  none;
+    }
+    
+    nav .logofornavdesktop{
+        display: flex;
+        width: 7vh;
+        margin: 2vh;
+    }
+
+    nav .h1fornav{
+        display: none;
+    }
+
+
+    .h1forsecond{
+        padding-left: 1vh;
+        display: flex;
+        width: 30%;
+        font-size: 4rem;
+    }
+
+    header nav{
+        display: flex;
+        height: 10vh;      
+    }
+
+    .secondebanner{
+        justify-content: space-between;
+        padding-top: 10vh;
+        padding-right: 5vh;
+        padding-bottom: 0;
+    }
+
+    .logoforsecond{
+        display: flex;
+        height: 22vh;
+        width: 22vw;
+    }
+
+    .h2forsecond{
+        padding-left: 1vh;
+        font-size: 2rem;
+        width: 55%;
+    }
+    
+    nav .logofornav{
+        width: 10vh;
+    }
+    
+    nav .h1fornav{
+        width: 25%;
+        font-size: 6vh;
+    }
+    
+    .allmenuburger{
+        display: none;
+    }
+
+    ul{
+        display: flex;
+        width: 70%;
+
+    }
+
+    li{
+        padding-right: 1rem;
+        font-size: 2vh;
+        color: var(--font-blue-platypus);
+    }
+    
+    .h3center{
+        font-size: 3rem;
+    }
+    
+    .pcenter{
+        font-size: 2rem;
+    }
+    
+    .controle{
+        display:grid;
+        grid:2rem/repeat(2,1fr);
+        place-items:center
+    }
+    
+    button{
+        font-size: 5rem;
+    } 
+    
+    .imgsocial a img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .bodyleft{
+        display: flex;
+        flex-direction: column;
+        margin : var(--margin-or-padding) var(--margin-or-padding);
+        margin-right : var(--margin-or-padding);
+    }
+    
+    .h3left{
+        font-size: 2rem;
+    }
+    
+    .pleft{
+        font-size: 2rem;
+    }
+    
+    .imgleft{
+        margin-top : var(--margin-or-padding) ;
+        margin-bottom: var(--margin-or-padding);
+        width: 80%;
+    }
+
+    .productfull{
+        display: flex;
+        width: 50%;
+    }
+
+    .imgproduct{
+        width: 20%;
+        margin-right : var(--margin-or-padding);
+    }
+
+    .producttitle{
+        display: flex;
+    }
+
 }
