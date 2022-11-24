@@ -114,7 +114,7 @@ nav .logofornavdesktop{
 }
 
 nav .h1fornav{
-    width: 70%;
+    width: 60%;
     font-family: var(--font-family-urban);
     font-size: 4vh;
     -webkit-text-stroke: 0.01px var(--font-blue-platypus);
@@ -159,6 +159,7 @@ nav .h1fornav{
     color: var(--font-yellow-platypus);
     padding: 2rem;
     border-bottom: solid 1px var(--font-yellow-platypus);
+    cursor: pointer;
 }
 
 .navbar-mobile i{
@@ -168,6 +169,7 @@ nav .h1fornav{
     right: 15px;
     font-size: 3rem;
     color: var(--font-blue-platypus);
+    cursor: pointer;
 }
 
 .menudesktop {
@@ -326,7 +328,6 @@ footer{
     border-top: solid 1px var(--font-blue-platypus);
     display: flex;
     justify-content: flex-end;
-
 }
 
 footer a{
@@ -386,6 +387,70 @@ footer a img{
 
 .change-menuburgerback{
     top:0;
+}
+
+.cookies{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--font-blue-platypus);
+    display: flex;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.rightcoockies{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 70%;
+}
+
+.cookies-text{
+    color: var(--font-white-platypus);
+    font-size: 1rem;
+}
+
+.cookies-button{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 1rem;
+}
+
+
+.btn{
+    color: var(--font-white-platypus);
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    /* max-width : 400px;
+    max-height: 75px; */
+}
+
+.imgcookies{
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.imgcookies img{
+    width: 75%;
+    border-radius: 25px;
+}
+
+.btn.btn-success{
+    background-color: var(--font-yellow-platypus);
+    font-size: 1rem;
+}
+
+.btn.btn-deny{
+    color: var(--font-blue-platypus);
+    background-color: var(--font-white-platypus);
+    font-size: 1rem;
 }
 
 @media screen and (max-width: 350px) {
