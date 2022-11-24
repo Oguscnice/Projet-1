@@ -94,7 +94,7 @@ li a{
 
 header nav{
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     display: flex;
     align-items: center;
     background-color: var(--font-yellow-platypus);
@@ -128,23 +128,49 @@ nav .h1fornav{
     -webkit-text-stroke: 0.01px var(--font-blue-platypus);
 }
 
-.allmenuburger{
-    display: flex;
-    flex-direction: column;
+.navbar-mobile{
+    display: block;
     justify-content: flex-end;
     margin: 2vh;
 }
 
-nav .allmenuburger .littleburger{
-    display: block;
-    width: 5vh;
-    height: 5px;
-    margin: 3px;
-    border-radius: 25%;
+.menuburgerback{
+    transition: top 0.9s;
     background-color: var(--font-blue-platypus);
+    height: 100vh;
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    width: 100%;
+    opacity: 0.9;
 }
 
-ul {
+.navbar-mobile-list{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-mobile-list .aburger{
+    font-size: 3rem;
+    font-weight: 500;
+    color: var(--font-yellow-platypus);
+    padding: 2rem;
+    border-bottom: solid 1px var(--font-yellow-platypus);
+}
+
+.navbar-mobile i{
+    position: fixed;
+    z-index: 999;
+    top: 10px;
+    right: 15px;
+    font-size: 3rem;
+    color: var(--font-blue-platypus);
+}
+
+.menudesktop {
     display : none;
 }
 
@@ -358,6 +384,10 @@ footer a img{
     margin-top: var(--margin-or-padding);
 }
 
+.change-menuburgerback{
+    top:0;
+}
+
 @media screen and (max-width: 350px) {
     .contenu-carrousel, .controle {
         display: none;
@@ -429,17 +459,17 @@ footer a img{
         font-size: 6vh;
     }
     
-    .allmenuburger{
+    .navbar-mobile{
         display: none;
     }
 
-    ul{
+    .menudesktop{
         display: flex;
         width: 70%;
 
     }
 
-    li{
+    .menudesktop li{
         padding-right: 1rem;
         font-size: 2vh;
         color: var(--font-blue-platypus);
