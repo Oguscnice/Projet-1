@@ -6,10 +6,6 @@
     text-decoration:none;
 }
 
-li a{
-    color: var(--font-blue-platypus);
-}
-
 @font-face {
     font-family: 'Urban_Brush';
     src: url('/assets/font/urban_brush/Urban_Brush.ttf') format('truetype');
@@ -22,6 +18,7 @@ li a{
     font-family: 'WorkSans';
     src: url('/assets/font/work-sans-cdnfonts/WorkSans-Regular.ttf') format('truetype');
 }
+
 @import url('https://fonts.cdnfonts.com/css/work-sans');
 
 :root {
@@ -34,6 +31,9 @@ li a{
     --margin-or-padding : 5%;
 }
 
+li a{
+    color: var(--font-blue-platypus);
+}
 
 .indexpage {
     display : flex;
@@ -48,11 +48,6 @@ li a{
     height: 20%;
     font-size: 8vh;
     margin-top: 8vh;
-}
-
-.bodycenter{
-    background: fixed;
-    background-image: url();
 }
 
 .indexpage .logopng {
@@ -78,7 +73,7 @@ li a{
     display: flex;
     position: absolute;
     z-index: 5;
-    opacity: 80%;
+    opacity: 0.8;
 }
 
 #beerGIF {
@@ -399,7 +394,7 @@ footer a img{
     align-items: center;
     padding-top: 10rem;
     padding-bottom: 5rem;
-    opacity: 0.9;
+    opacity: 1;
     transition: 0.5s;
 }
 
@@ -428,8 +423,7 @@ footer a img{
     padding: 1rem;
     border: none;
     border-radius: 10px;
-    /* max-width : 400px;
-    max-height: 75px; */
+    width: 25%;
 }
 
 .imgcookies{
@@ -445,13 +439,13 @@ footer a img{
 
 .btn.btn-success{
     background-color: var(--font-yellow-platypus);
-    font-size: 1rem;
+    font-size: 2vw;
 }
 
 .btn.btn-deny{
     color: var(--font-blue-platypus);
     background-color: var(--font-white-platypus);
-    font-size: 1rem;
+    font-size: 2vw;
 }
 
 @media screen and (max-width: 350px) {
@@ -471,12 +465,12 @@ footer a img{
 
 @media screen and (min-width: 900px) {
 
-    body{
+    /* body{
         background-image: url(/images/beer/pexels-nicolas-postiglioni-fond-reduce.png);
         background-repeat: no-repeat;
         background-position: top 30vh right 0;
         background-size: 75px;
-    }
+    } */
 
     nav .logofornavpmobile{
         display:  none;
@@ -514,8 +508,8 @@ footer a img{
 
     .logoforsecond{
         display: flex;
-        height: 22vh;
-        width: 22vw;
+        width: 15vw;
+        max-width: 200px;
     }
 
     .h2forsecond{
@@ -643,6 +637,10 @@ footer a img{
     
     .pright, .h3right, .h4right {
         font-size: 2rem;
+    }
+
+    .h2forsecond{
+        font-size: 4rem;
     }
 
 }

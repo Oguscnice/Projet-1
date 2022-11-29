@@ -41,37 +41,3 @@ btnDeny.addEventListener('click', function(){
     console.log('bouton cliqué !');
     cookies.style.display = "none";
 });
-
-
-
-
-
-
-function helloWorld1(){
-    console.log("Hello World !");
-};
-
-function helloWorld(variable){
-    console.log(variable);
-};
-
-function doubleEnter(variable){
-    variable = variable * 2;
-    console.log(variable);
-}
-
-function multipleTwoVariables(variable1, variable2){
-    variable = variable1 * variable2;
-    console.log(variable);
-}
-
-function addCarater(variable3){
-    variable3 = "'" + variable3 +"'"
-    console.log(variable3);
-}
-
-helloWorld1();
-helloWorld("Salut toi");
-doubleEnter(5);
-multipleTwoVariables(5,6);
-addCarater("Hibou");
