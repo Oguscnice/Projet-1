@@ -20,15 +20,14 @@ var angle = 0;function carrousel(sign){
 spinner.setAttribute("style","transform:rotateY("+ angle +"deg);")}	
 
 /* Agrandir img*/
-const imagesBig = document.querySelectorAll('.imgZoom');
-console.log(imagesBig);
-
-imagesBig.addEventListener('click', function(){
-    console.log("coucou");
-    imagesBig[1].classList.toggle('change-imagesBig');})
-//     for (i=0; i<imagesBig.length; i++){
-//     imagesBig[i].classList.toggle('change-imagesBig');}
-// });
+let imagesBig = document.querySelectorAll(".imgZoom");
+function change(value1){
+    value1.classList.toggle("change-imagesBig");
+  }
+  
+  for (let i = 0; i< imagesBig.length;i++){
+    imagesBig[i].addEventListener("click", () => change(imagesBig[i]));
+  }
 
 /* Clique au bouton Succes ou Deny des cookies */
 const btnSuccess = document.querySelector('.btn-success');
