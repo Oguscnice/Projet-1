@@ -7,6 +7,27 @@ icone.addEventListener('click', function(){
     icone.classList.toggle('fa-times');
 });
 
+/* changement de style au survol de MENU li */
+let menuDesktopHover = document.querySelectorAll(".menudesktop li");
+let menuDesktopHovera = document.querySelectorAll(".menudesktop li a");
+
+function hoverMenu(valueli, valuea){
+    valueli.classList.add("lihover");
+    valuea.classList.add("liahover");
+  };
+
+/* remise du style quand la souris quiite le MENU li */
+  function noHoverMenu(valuelileave, valuealeave){
+    valuelileave.classList.remove("lihover");
+    valuealeave.classList.remove("liahover");
+  };
+
+  for (let i = 0; i< menuDesktopHover.length;i++){
+    menuDesktopHover[i].addEventListener("mouseover", () => hoverMenu(menuDesktopHover[i], menuDesktopHovera[i]));
+    menuDesktopHover[i].addEventListener("mouseleave", () => noHoverMenu(menuDesktopHover[i], menuDesktopHovera[i]));
+  };
+
+
 /* Variation d'angle pour le carousel */
 var angle = 0;function carrousel(sign){
 
@@ -24,7 +45,7 @@ let imagesBig = document.querySelectorAll(".imgZoom");
 function change(value1){
     value1.classList.toggle("change-imagesBig");
   }
-  
+
   for (let i = 0; i< imagesBig.length;i++){
     imagesBig[i].addEventListener("click", () => change(imagesBig[i]));
   }

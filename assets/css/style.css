@@ -536,15 +536,25 @@ footer a img{
 
     .menudesktop{
         display: flex;
-        width: 70%;
-
+        width: 50%;
+        height: 50%;
+        display: flex;
+        justify-content: space-between;
     }
 
     .menudesktop li{
-        padding-right: 1rem;
+        /* padding-right: 1rem; */
         font-size: 2vh;
         color: var(--font-blue-platypus);
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
     }
+
+    .menudesktop li a{
+        text-align: center;
+}
     
     .h3center{
         font-size: 3rem;
@@ -659,6 +669,30 @@ footer a img{
     height: 200px;
     position: relative;
     perspective: 5000px
+    }
+
+    ul{
+        text-align: center;
+    }
+
+    .liahover{
+        color: var(--font-yellow-platypus);
+        transition: 0.5s;
+    }
+    
+    .lihover{
+        background-color: var(--font-blue-platypus);
+        transition: 0.5s;
+        border-radius: 20%;
+    }
+
+    .liaback{
+        color: var(--font-blue-platypus);
+    }
+
+    .liback{
+        color: var(--font-blue-platypus);
+        background-color: var(--font-yellow-platypus);
     }
 
 }
