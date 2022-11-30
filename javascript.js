@@ -1,14 +1,11 @@
 /* Menu burger*/
 const icone = document.querySelector('.navbar-mobile i');
-console.log(icone);
+const menuburgerback = document.querySelector('.menuburgerback');
 
 icone.addEventListener('click', function(){
-    console.log("icône cliquée");
     menuburgerback.classList.toggle('change-menuburgerback');
     icone.classList.toggle('fa-times');
 });
-
-const menuburgerback = document.querySelector('.menuburgerback');
 
 /* Variation d'angle pour le carousel */
 var angle = 0;function carrousel(sign){
@@ -21,6 +18,17 @@ var angle = 0;function carrousel(sign){
     }
     
 spinner.setAttribute("style","transform:rotateY("+ angle +"deg);")}	
+
+/* Agrandir img*/
+const imagesBig = document.querySelectorAll('.imgZoom');
+console.log(imagesBig);
+
+imagesBig.addEventListener('click', function(){
+    console.log("coucou");
+    imagesBig[1].classList.toggle('change-imagesBig');})
+//     for (i=0; i<imagesBig.length; i++){
+//     imagesBig[i].classList.toggle('change-imagesBig');}
+// });
 
 /* Clique au bouton Succes ou Deny des cookies */
 const btnSuccess = document.querySelector('.btn-success');

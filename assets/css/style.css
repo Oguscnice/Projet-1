@@ -161,7 +161,7 @@ nav .h1fornav{
     position: fixed;
     z-index: 999;
     top: 10px;
-    right: 15px;
+    right: 10%;
     font-size: 3rem;
     color: var(--font-blue-platypus);
     cursor: pointer;
@@ -233,7 +233,7 @@ button{
     
 .carrousel {  
      height: 60%;
-     width: 60%;
+     width: 80%;
      position: absolute;
      transform-style: preserve-3d;
      transition: transform 1s;
@@ -243,7 +243,7 @@ button{
     backface-visibility: hidden;
     box-shadow: 0 10px 10px rgba(0,0,0,.6);
     position: absolute;
-    width: 90%;
+    width: 100%;
     height: 200px;
     outline: 1px solid transparent  
 }
@@ -396,6 +396,7 @@ footer a img{
     padding-bottom: 5rem;
     opacity: 1;
     transition: 0.5s;
+    border-top: solid 3px; 
 }
 
 .rightcoockies{
@@ -448,6 +449,14 @@ footer a img{
     font-size: 2vw;
 }
 
+.change-imagesBig{
+    transform: scale(1.2) ;
+    transition: 0.5s;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
 @media screen and (max-width: 350px) {
     .contenu-carrousel, .controle {
         display: none;
@@ -464,13 +473,6 @@ footer a img{
 }
 
 @media screen and (min-width: 900px) {
-
-    /* body{
-        background-image: url(/images/beer/pexels-nicolas-postiglioni-fond-reduce.png);
-        background-repeat: no-repeat;
-        background-position: top 30vh right 0;
-        background-size: 75px;
-    } */
 
     nav .logofornavpmobile{
         display:  none;
@@ -584,6 +586,7 @@ footer a img{
         margin-top : var(--margin-or-padding) ;
         margin-bottom: var(--margin-or-padding);
         width: 80%;
+        transition: 0.5s;
     }
 
     .allproduct{
@@ -641,6 +644,19 @@ footer a img{
 
     .h2forsecond{
         font-size: 4rem;
+    }
+
+    .carrousel {  
+        height: 100%;
+        width: 100%;
+   }
+
+   .contenu-carrousel {
+    margin: 3rem auto;
+    width: 300px;
+    height: 200px;
+    position: relative;
+    perspective: 5000px
     }
 
 }
