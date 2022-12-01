@@ -10,7 +10,7 @@
     font-family: 'Urban_Brush';
      src:/*url('/assets/font/urban_brush/Urban_Brush.woff') format('woff'), */
     /* url('/assets/font/urban_brush/Urban_Brush.woff2') format('woff2'), */
-    url('/Projet-1/assets/font/urban_brush/Urban_Brush.ttf') format('truetype');
+    url('https://fonts.cdnfonts.com/css/urban-brush');
 }
 @font-face{
     font-family: 'Steelworks';
