@@ -153,8 +153,13 @@ nav .h1fornav{
     font-weight: 500;
     color: var(--font-yellow-platypus);
     padding: 2rem;
-    border-bottom: solid 1px var(--font-yellow-platypus);
     cursor: pointer;
+}
+
+.aburger:hover{
+    border-bottom: solid 1px var(--font-yellow-platypus);
+    border-top: solid 1px var(--font-yellow-platypus);
+    color: var(--font-white-platypus);
 }
 
 .navbar-mobile i{
@@ -280,6 +285,7 @@ button{
 
 .imgZoom{
     cursor: pointer;
+    transition: 0.5s;
 }
 
 .imgsocial{
@@ -458,6 +464,59 @@ footer a img{
     transition: 0.5s;
     cursor: pointer;
 }
+
+.carrouselAvis{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blockAvis{
+    display: flex;
+    width: 50%;
+    margin-top: var(--margin-or-padding);
+    background: var(--font-yellow-platypus);
+    border-radius: 10%;
+    border: solid 3px var(--font-blue-platypus);
+    box-shadow: 5px 5px 5px var(--font-blue-platypus);
+}
+
+.pictureAvis{
+    width: 20%;
+    border-radius: 25%;
+    padding: 1vh;
+    display: flex;
+    align-content: center;
+}
+
+.pictureAvis img{
+    /* height: 50%; */
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px var(--font-blue-platypus);
+}
+
+.allAvis{
+    display: block;
+    width: 80%;
+    padding: 1vh;
+    padding: 1vh;
+}
+
+.nameAndStarAvis{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nameAvis{
+    font-weight: bold;
+}
+
+.starsAvis i{
+    color: var(--font-blue-platypus);
+}
+
+
 
 @media screen and (max-width: 350px) {
     .contenu-carrousel, .controle {
@@ -693,6 +752,18 @@ footer a img{
     .liback{
         color: var(--font-blue-platypus);
         background-color: var(--font-yellow-platypus);
+    }
+
+    .carrouselAvis{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding-top: var(--margin-or-padding);
+    }
+
+    .blockAvis{
+        width: 30%;
+        margin-top: 0;
     }
 
 }
