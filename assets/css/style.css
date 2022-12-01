@@ -14,7 +14,7 @@
 }
 @font-face{
     font-family: 'Steelworks';
-    src: url('/Projet-1/assets/font/burntilldead_steelworks-vintage-demo/Steelworks_Vintage_Demo.woff') format('woff'),
+    src: url('https://fonts.cdnfonts.com/s/14645/Steelworks Vintage Demo.woff') format('woff');
     /* url('/assets/font/burntilldead_steelworks-vintage-demo/Steelworks_Vintage_Demo.woff2') format('woff2'),
     url('/assets/font/burntilldead_steelworks-vintage-demo/Steelworks_Vintage_Demo.ttf') format('truetype'); */
 }
