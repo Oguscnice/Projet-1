@@ -8,15 +8,15 @@
 
 @font-face {
     font-family: 'Urban_Brush';
-    src: url('/assets/font/urban_brush/Urban_Brush.ttf') format('truetype');
+    src: url('/assets/font/urban_brush/Urban_Brush.woff') format('woff');
 }
 @font-face{
     font-family: 'Steelworks';
-    src: url('/assets/font/burntilldead_steelworks-vintage-demo/Steelworks_Vintage_Demo.ttf') format('truetype');
+    src: url('/assets/font/burntilldead_steelworks-vintage-demo/Steelworks_Vintage_Demo.woff') format('woff');
 }
 @font-face{
     font-family: 'WorkSans';
-    src: url('/assets/font/work-sans-cdnfonts/WorkSans-Regular.ttf') format('truetype');
+    src: url('/assets/font/work-sans-cdnfonts/WorkSans-Regular.woff') format('woff');
 }
 
 @import url('https://fonts.cdnfonts.com/css/work-sans');
