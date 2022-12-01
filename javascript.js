@@ -42,6 +42,8 @@ spinner.setAttribute("style","transform:rotateY("+ angle +"deg);")}
 
 /* Agrandir img*/
 let imagesBig = document.querySelectorAll(".imgZoom");
+console.log(imagesBig);
+
 function change(value1){
     value1.classList.toggle("change-imagesBig");
   }
