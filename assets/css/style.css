@@ -115,9 +115,10 @@ nav .logofornavdesktop{
 
 nav .h1fornav{
     width: 60%;
+    color: var(--font-blue-platypus);
     font-family: var(--font-family-urban);
-    font-size: 4vh;
-    -webkit-text-stroke: 0.01px var(--font-blue-platypus);
+    font-size: 5vh;
+    /* -webkit-text-stroke: 0.01px var(--font-blue-platypus); */
 }
 
 .h1forsecond{
