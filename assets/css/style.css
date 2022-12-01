@@ -8,9 +8,9 @@
 
 @font-face {
     font-family: 'Urban_Brush', sans-serif;
-    src:url('/assets/font/urban_brush/Urban_Brush.woff') format('woff'),
-    url('/assets/font/urban_brush/Urban_Brush.woff2') format('woff2'),
-    url('/assets/font/urban_brush/Urban_Brush.ttf') format('truetype');
+    src:url('/Projet-1/assets/font/urban_brush/Urban_Brush.woff') format('woff'),
+    url('/Projet-1/assets/font/urban_brush/Urban_Brush.woff2') format('woff2'),
+    url('/Projet-1/assets/font/urban_brush/Urban_Brush.ttf') format('truetype');
 }
 @font-face{
     font-family: 'Steelworks';
