@@ -77,3 +77,15 @@ btnDeny.addEventListener("click", function () {
   cookies.style.display = "none";
 });
 
+let counter = 1;
+
+setInterval(()=>{
+  document.querySelector('.imagesCarrousel.show').classList.remove('show');
+  let imagesCarrousel = document.querySelector(`.img-${counter}`)
+  imagesCarrousel.classList.add('show')
+  counter++
+  if(counter >6){
+    counter = 1;
+  }
+  
+},3000);

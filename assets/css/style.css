@@ -272,7 +272,31 @@ button {
   overflow: hidden;
 }
 
-.carrousel div:nth-child(1) {
+.imagesCarrousel{
+  border-top: 30vh;
+   height: 40%;
+   width: 60%;
+   position: absolute;
+   opacity: 0;
+   transition: 0.8s;
+   object-fit: contain ;
+   border-radius: 5px;
+   /* box-shadow: 5px 5px 5px black; */
+}
+
+.show{
+  opacity: 1;
+}
+
+.contenu-carrouselFinal{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25vh;
+  margin-bottom: 25vh;
+}
+
+/* .carrousel div:nth-child(1) {
   transform: rotateY(0) translateZ(150px);
   background: url(../../images/outside-platypus.jpg) no-repeat center
     center/cover;
@@ -302,7 +326,7 @@ button {
 .carrousel div:nth-child(6) {
   transform: rotateY(300deg) translateZ(150px);
   background: url(../../images/bretonne.jpg) no-repeat center center/cover;
-}
+} */
 
 .imgZoom {
   cursor: pointer;
