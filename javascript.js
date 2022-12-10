@@ -76,3 +76,4 @@ btnDeny.addEventListener("click", function () {
   console.log("bouton cliqué !");
   cookies.style.display = "none";
 });
+
