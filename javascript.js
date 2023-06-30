@@ -1,4 +1,4 @@
-/* Menu burger*/
+/* Menu burger*/chang
 const icone = document.querySelector(".navbar-mobile i");
 const menuburgerback = document.querySelector(".menuburgerback");
 
@@ -16,7 +16,7 @@ function hoverMenu(valueli, valuea) {
   valuea.classList.add("liahover");
 }
 
-/* remise du style quand la souris quiite le MENU li */
+/* remise du style quand la souris quitte le MENU li */
 function noHoverMenu(valuelileave, valuealeave) {
   valuelileave.classList.remove("lihover");
   valuealeave.classList.remove("liahover");
